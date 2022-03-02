@@ -35,3 +35,7 @@ ul li{
   padding:5px 20px;
   margin: 10px;
 }
+ul li a{
+  text-decoration: none;
+  color: #000;
+}

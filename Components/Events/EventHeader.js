@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 const EventHeader = () => {
@@ -8,9 +9,9 @@ const EventHeader = () => {
         <nav style={{display:'flex'}}>
           <h2 >Event Management</h2>
             <ul>
-                <li>Browse All Events</li>
-                <li>Single Events </li>
-                <li>My Blog </li>
+                <li><Link href="/">Browse All Events </Link></li>
+                <li><Link href="/events/evetid">faloroute Events </Link> </li>
+                <li><Link href="/blog"> My Blog </Link></li>
             </ul>
             
         </nav>
