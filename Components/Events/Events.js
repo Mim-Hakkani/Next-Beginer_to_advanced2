@@ -2,8 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import moment from "moment";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import SingleEvents from '../../Components/Events/SingleEvents'
 
-const DUMMY_EVENTS = [
+export const  DUMMY_EVENTS = [
     {
       id: 'e1',
       title: 'Programming for everyone',
@@ -51,31 +52,11 @@ const Events = () => {
                      
 
                          {
-                             DUMMY_EVENTS.map(event=>
-
-                                <div className="row border border-primary p-2" key={event.id}>
-
-                                <div className="col-md-4">
-                                    <Image src={'/'+event.image} alt="" height={800} width={600} />
-                                </div>
-                                <div className="col-md-6 ">
-                                    <div className="event-details">
-                                        <div className="h3">{event.title}  </div>
-                                         <h5>{moment(event.date).format('ll')}</h5>
-                                         <p>{event.description}</p>
-                                         <address>
-                                             {event.location}
-                                         </address>
-
-                                         <button className="btn btn-info text-white px-5"
-                                          onClick={()=>router.push(`/events/${event.id}`)}
-                                         >Details
-                                          <FontAwesomeIcon icon={faArrowRight} />
-                                         </button>
-                                    </div>
-                                </div>
-       
-                                </div>
+                             DUMMY_EVENTS.map(event=><SingleEvents 
+                             key={event.id}
+                             event={event}
+                          
+                             />
                                 )
                          }
 
