@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import EventHeader from '../Components/Events/EventHeader'
 import Events from '../Components/Events/Events'
 
 
@@ -12,6 +13,7 @@ export default function Home() {
 
       </Head>
           
+      <EventHeader />
       <Events />
 
       

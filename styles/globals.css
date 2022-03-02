@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav{
+  background-color: rgb(45, 187, 197);
+ 
+
+}
+ul{
+  list-style-type: none;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+ul li{
+  display: inline-block;
+  color: rgb(26, 26, 24);
+  background-color: rgb(218, 207, 56);
+  text-align: center;
+  padding:5px 20px;
+  margin: 10px;
+}
