@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.17",
     "bootstrap": "^5.1.3",
     "moment": "^2.29.1",
     "next": "12.1.0",

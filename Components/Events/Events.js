@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import moment from "moment";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -68,7 +69,9 @@ const Events = () => {
 
                                          <button className="btn btn-info text-white px-5"
                                           onClick={()=>router.push(`/events/${event.id}`)}
-                                         >Details</button>
+                                         >Details
+                                          <FontAwesomeIcon icon={faArrowRight} />
+                                         </button>
                                     </div>
                                 </div>
        
