@@ -1,9 +1,18 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import EventHeader from '../Components/Events/EventHeader'
 import Events from '../Components/Events/Events'
 
 
 export default function Home() {
+  
+  const router = useRouter();
+
+const handlesearch =(year,month)=>{
+  const filterpath = `events/${year}/${month}`
+   router.push(filterpath)
+}
+
   return (
     <div >
       <Head>
@@ -13,7 +22,7 @@ export default function Home() {
 
       </Head>
           
-      <EventHeader />
+      <EventHeader onSearch={handlesearch} />
       <Events />
 
       
