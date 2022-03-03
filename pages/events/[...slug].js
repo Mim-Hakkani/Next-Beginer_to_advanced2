@@ -1,3 +1,4 @@
+// import { Button } from "bootstrap";
 import moment from "moment";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -28,6 +29,8 @@ const FiltereventPage = () => {
      
     return (
         <div className="container">
+
+            <button className="btn btn-info" onClick={()=>router.push(`/`)}>All Events</button>
             {
                 filterevent.map(aa=>
                     <div className="row border border-primary p-2" key={aa.id}>
