@@ -57,7 +57,7 @@ const FiltereventPage = () => {
                         </div>
                     </div>
                     
-                                   </div>)
+                </div>)
             }
                
         </div>
