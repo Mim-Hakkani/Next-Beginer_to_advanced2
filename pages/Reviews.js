@@ -10,14 +10,18 @@ const Reviews = () => {
     const handlereviews =(e)=>{
         e.preventDefault();
 
-        const email =emailref.current.value;
-        const text =commentsref.current.value;
+        const enteremail =emailref.current.value;
+        const entertext =commentsref.current.value;
 
  
-         
+          //store the current value in objects 
+           const reqBody = { email: enteremail, text: entertext };
+
+           console.log(reqBody);
+
         //after clicking the value is empty 
-        emailref.current.value ='',
-        commentsref.current.value=''
+            emailref.current.value ='',
+            commentsref.current.value=''
     }
     return (
         <div>
@@ -29,7 +33,7 @@ const Reviews = () => {
 
                     <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ref={emailref} />
+                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ref={emailref} />
                     
                     </div>
 
