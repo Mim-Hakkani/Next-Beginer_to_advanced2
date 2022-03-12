@@ -17,7 +17,29 @@ const Reviews = () => {
           //store the current value in objects 
            const reqBody = { email: enteremail, text: entertext };
 
-           console.log(reqBody);
+         
+
+        //    fetch('/api/feedback', {
+        //     method: 'POST',
+        //     body: JSON.stringify(reqBody),
+        //     headers: {
+        //       'Content-Type': 'application/json',
+        //     },
+        //   })
+        //     .then((response) => response.json())
+        //     .then((data) => console.log(data));
+        // }
+
+
+      
+        // function loadFeedbackHandler() {
+        //   fetch('/api/feedback')
+        //     .then((response) => response.json())
+        //     .then((data) => {
+        //       setFeedbackItems(data.feedback);
+        //     });
+        // }
+
 
         //after clicking the value is empty 
             emailref.current.value ='',
@@ -33,7 +55,7 @@ const Reviews = () => {
 
                     <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email address</label>
-                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ref={emailref} />
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ref={emailref} />
                     
                     </div>
 

@@ -26,6 +26,7 @@ const handlesubmit =(e)=>{
                 <li><Link href="/">Browse All Events </Link></li>
                 <li><Link href="/events/evetid">faloroute Events </Link> </li>
                 <li><Link href="/blog"> My Blog </Link></li>
+                <li><button className="btn" id="">Translate</button></li>
             </ul>
             
         </nav>
